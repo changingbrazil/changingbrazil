@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    each album in albums
+        div.album
+            div.section-title #{album.title}
+            div.section-content
+                each photo in album.photos
+                    img(src="#{photo.url}")

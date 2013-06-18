@@ -1,0 +1,48 @@
+doctype 5
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        div#facebook-root
+        table#layout-table
+            tr
+                td#top-bar-column
+                    div
+                        h3= title
+            tr
+                td#content-column
+                    div#content-div
+                        table
+                            tbody
+                                tr
+                                    td#sidebar-column
+                                        nav#sidebar
+                                            ul.nav.nav-list
+                                                li.nav-header #{title}
+                                                li
+                                                    a(href='/news')
+                                                        i.icon-star
+                                                        span Notícias
+                                                li
+                                                    a(href='/photos')
+                                                        i.icon-camera
+                                                        span Fotos
+                                                li
+                                                    a(href='/videos')
+                                                        i.icon-film
+                                                        span Vídeos
+                                                li
+                                                    a(href='/forum')
+                                                        i.icon-comment
+                                                        span Fórum
+                                    td#main-content-column
+                                        block content
+            tr
+                td
+
+    script(src='/jquery/jquery.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+    script(src='/javascripts/general.js')
