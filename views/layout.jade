@@ -20,21 +20,23 @@ html
                         table
                             tbody
                                 tr
-                                    div.fb-like(data-href="http://changingbrazil.org", data-send="false", data-width="450", data-show-faces="true")
-                                    br
-                                    a(href="https://twitter.com/share", class="twitter-share-button")
-                                        Tweet
+                                    td(colspan=2, style='text-align: left; padding-bottom: 13px')
+                                        div(style='display: inline-block; height: 30px; overflow: hidden')
+                                            a(href="https://twitter.com/share", class="twitter-share-button")
+                                                Tweet
+                                            span.fb-like(data-href="http://changingbrazil.org", data-send="false", data-width="450", data-show-faces="false")
+                                tr
                                     td#sidebar-column
                                         nav#sidebar
                                             ul.nav.nav-list
                                                 li
                                                     a(href='/news')
                                                         i.icon-star
-                                                        span Notícias
-                                                li
-                                                    a(href='/photos')
-                                                        i.icon-camera
-                                                        span Fotos
+                                                        span Início
+                                                //- li
+                                                //-     a(href='/photos')
+                                                //-         i.icon-camera
+                                                //-         span Fotos
                                                 li
                                                     a(href='/videos')
                                                         i.icon-film
@@ -46,7 +48,7 @@ html
                                                 li
                                                     a(href='/contribute')
                                                         i.icon-retweet
-                                                        span Contribua
+                                                        span Colabore
                                     td#main-content-column
                                         block content
             tr

@@ -58,9 +58,15 @@ td
     border-right: 1px solid #bbb;
 }
 
+#sidebar-column .nav-list
+{
+    width: 200px;
+}
+
 #main-content-column
 {
     padding-left: 20px;
+    width: 750px;
 }
 
 .nav-list [class^="icon-"],
@@ -87,6 +93,67 @@ td
 {
     width: 200px;
     margin-right: 20px;
+}
+
+.content-block
+{
+    padding: 15px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+/*********************************************************
+*
+* Videos
+*
+*********************************************************/
+
+.video-item
+{
+    margin-bottom: 30px;
+    width: 660px;
+}
+
+.video-item > table
+{
+    table-layout: fixed;
+}
+
+.video-item td
+{
+    margin-bottom: 30px;
+    width: 260px;
+}
+
+.video-item > table > tbody > tr:first-child > td
+{
+    padding-right: 20px;
+    width: 380px;
+}
+
+.video-item iframe
+{
+    margin-right: 20px;
+}
+
+.video-item .video-title
+{
+    font-size: 17px;
+    padding-bottom: 10px;
+    height: 40px;
+}
+
+.video-item .video-date
+{
+    color: #999;
+    padding-bottom: 15px;
+}
+
+.video-item .video-description
+{
+    height: 130px;
+    overflow: hidden;
 }
 
 /*********************************************************
