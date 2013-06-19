@@ -1,7 +1,8 @@
 extends layout
 
 block content
-    each item in discussions
-        div.content-block
-            a(href='#{item.url}')
-                span #{item.title}
+	div.isotope-container
+		each item in discussions
+			a(href='#{item.url}')
+				div.isotope-item
+					span #{item.title}

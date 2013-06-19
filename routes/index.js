@@ -28,7 +28,7 @@ exports.newsItem = function(req, res)
 		if ( ! err && newsItem != null )
 		{
 			res.render( 'newsItem', {
-				title: title + " - " + newsItem.title,
+				title: title,
 				newsItem: newsItem,
 				fullUrl: fullUrl,
 			});
@@ -68,7 +68,7 @@ exports.discussionItem = function(req, res)
 		if ( ! err && discussionItem != null )
 		{
 			res.render( 'discussionItem', {
-				title: title + " - " + discussionItem.title,
+				title: title,
 				discussionItem: discussionItem,
 				fullUrl: fullUrl,
 			});

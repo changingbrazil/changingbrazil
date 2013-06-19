@@ -218,3 +218,20 @@ a:focus
 {
     background-color: #0a6;
 }
+
+/*********************************************************
+*
+* Isotope item rules
+*
+*********************************************************/
+.isotope-item {
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    word-wrap: break-word;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
