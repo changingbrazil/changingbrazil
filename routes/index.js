@@ -48,3 +48,8 @@ exports.discussionItem = function(req, res)
 		});
 	});
 };
+
+exports.contribute = function(req, res)
+{
+	res.render( 'contribute', { title: title } );
+};

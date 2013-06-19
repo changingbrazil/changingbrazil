@@ -6,6 +6,8 @@ html
         link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
         link(rel='stylesheet', href='/stylesheets/style.css')
     body
+        a(href="https://github.com/changingbrazil/changingbrazil")
+            img(style="position: absolute; top: 0; right: 0; border: 0;", src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png", alt="Fork me on GitHub")
         div#facebook-root
         table#layout-table
             tr
@@ -37,6 +39,10 @@ html
                                                     a(href='/discussions')
                                                         i.icon-comment
                                                         span Discussões
+                                                li
+                                                    a(href='/contribute')
+                                                        i.icon-retweet
+                                                        span Contribua
                                     td#main-content-column
                                         block content
             tr
