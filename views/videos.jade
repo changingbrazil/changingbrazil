@@ -7,7 +7,7 @@ block content
                 tbody
                     tr
                         td(rowspan='4')
-                            iframe(width="380", height="214", src="#{item.url}", frameborder="0", allowfullscreen)
+                            div.lyte(id="#{item.videoId}")
                     tr
                         td.video-title
                             a(href="#{item.url}")
@@ -21,3 +21,4 @@ block content
                     tr
                         td
                             djfgkldfjgld
+    script(src='/lyte/lyte.js')
