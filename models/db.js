@@ -47,8 +47,7 @@ Article.remove().exec(function(error) {
 		Album.remove().exec(function(error) {
 			Video.remove().exec(function(error) {
 				Discussion.remove().exec(function(error) {
-					var article1 = new Article({ title: 'Artigo 1', content: 'Conteúdo do Artigo 1' });
-					article1.save();
+					(new Article({ title: 'Artigo 1', content: 'Conteúdo do Artigo 1' })).save();
 
 					var album1 = new Album( { title: 'Rio de Janeiro, 17/Jun/2013', photos: [] });
 					album1.photos.push( { title: 'Foto 1', url: 'http://veja4.abrilm.com.br/assets/images/2013/6/155053/protestos-tarifa-transporte-rio-de-janeiro-20130617-04-size-598.jpg?1371511266' } );
@@ -77,45 +76,41 @@ Article.remove().exec(function(error) {
 					album4.photos.push( { title: 'Foto 5', url: 'http://images.redetv.com.br/siteredetv/grupos/jornalismo/redetvinoticias/fotos/GAL_7169/grandes/IFOT_63894.jpg' } );
 					album4.save();
 
-					var video1 = new Video(
+					(new Video(
 						{
 							url: 'http://www.youtube.com/embed/v9rgOwH99nc',
 							title: 'MUDA BRASIL - FAZ SENTIDO',
 							date: new Date( 2013, 06, 18 ),
 							description: 'MUDA BRASIL!\nNão é pelos 20 centavos! É pelos 2.2 trilhões acumulados só nos últimos 17 meses! Cadê o nosso dinheiro?'
 						}
-					);
-					video1.save( );
+					)).save();
 
-					var video2 = new Video(
+					(new Video(
 						{
 							url: 'http://www.youtube.com/embed/x2b4Dtav2jU',
 							title: 'O prefeito do Rio mente',
 							date: new Date( 2013, 06, 18 ),
 							description: 'A representatividade política desse Parlamento é muito ruim, por isso tem medo da sociedade, mas não é destruindo o prédio da Alerj que vão conseguir essa mudança política. É ocupando as ruas. Sete capitais já reduziram o valor passagem e isso se deu pela forte capacidade de mobilização da sociedade. Nesse sentido, o prefeito do Rio mente de forma irresponsável dizendo que aceita receber a liderança do movimento, que ele sabe que não existe, de forma debochada. Diz que não vai subsidiar empresas de ônibus. Mentira. Ele já subsidia. O prefeito e a sua base reduziram o ISS de 2% para 0,01% e, em dois anos, deixaram de arrecadar quase R$ 100 milhões. O nome disso é subsídio disfarçado. As passagens são caras e a prefeitura não tem qualquer controle sobre as empresas. A prefeitura paga quase 50 milhões por ano para a Rio Ônibus colocar o validador que controla a frequência dos alunos da rede. Há muito dinheiro público dentro dos interesses econômicos dessas empresas. Queremos que tenha coragem para abrir a caixa-preta, que reveja a licitação de carta marcada que fez em 2010. É para isso que a sociedade está indo para a rua. O senhor Eduardo Paes terá que ceder como as outras capitais já fizeram, porque esse movimento vai crescer e será vitorioso", afirmou Marcelo Freixo, nesta terça-feira (18/6), no plenário da Alerj.'
 						}
-					);
-					video2.save( );
+					)).save();
 
-					var video3 = new Video(
+					(new Video(
 						{
 							url: 'http://www.youtube.com/embed/B7t60-ro_5U',
 							title: 'Don\'t come to Brazil / Não venha para a copa',
 							date: new Date( 2013, 06, 18 ),
 							description: 'For all the world to see these facts and decide if they want to even come to the World Cup/Para que todos do mundo vejam esses fatos e decidem se querem mesmo vir para a Copa do Mundo.'
 						}
-					);
-					video3.save( );
+					)).save();
 
-					var video4 = new Video(
+					(new Video(
 						{
 							url: 'http://www.youtube.com/embed/AIBYEXLGdSg',
 							title: 'Please Help Us [Brazil] - #changebrazil',
 							date: new Date( 2013, 06, 14 ),
 							description: 'Reddit http://www.reddit.com/r/Brazil/comments<br>9gag - http://9gag.com/gag/aKzwogj/<br>Buzzfeed - http://www.buzzfeed.com/frischeisen/changebrazil-a-worldwide-call-for-help-bfg6'
 						}
-					);
-					video4.save( );
+					)).save();
 
 					(new Discussion({ title: "PEC-37", url: "/discussions/pec37" })).save();
 					(new Discussion({ title: "Protestos no Rio", url: "/discussions/protestosNoRio" })).save();
