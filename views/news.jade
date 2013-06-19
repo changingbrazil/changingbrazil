@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	div
+		each item in articles
+			div.content-block
+				h1
+					span #{item.title}
+				p #{item.content}
+
+				p (falta limitar o tamanho do texto por artigo nessa página)
+
+				a(href="#{item.url}")
+					span Leia mais

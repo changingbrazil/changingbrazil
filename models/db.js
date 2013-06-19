@@ -3,7 +3,8 @@ var mongoose = require( 'mongoose' );
 
 var articleSchema = new mongoose.Schema({
 	title: String,
-	content: String
+	content: String,
+	url: String,
 });
 
 var photoSchema = new mongoose.Schema({
@@ -47,7 +48,9 @@ Article.remove().exec(function(error) {
 		Album.remove().exec(function(error) {
 			Video.remove().exec(function(error) {
 				Discussion.remove().exec(function(error) {
-					(new Article({ title: 'Artigo 1', content: 'Conteúdo do Artigo 1' })).save();
+					(new Article({ title: 'Artigo 1', content: 'Conteúdo do Artigo 1', url: '/news/artigo1' })).save();
+					(new Article({ title: 'Artigo 2', content: 'Conteúdo do Artigo 2', url: '/news/artigo2' })).save();
+					(new Article({ title: 'Artigo 3', content: 'Conteúdo do Artigo 3', url: '/news/artigo3' })).save();
 
 					var album1 = new Album( { title: 'Rio de Janeiro, 17/Jun/2013', photos: [] });
 					album1.photos.push( { title: 'Foto 1', url: 'http://veja4.abrilm.com.br/assets/images/2013/6/155053/protestos-tarifa-transporte-rio-de-janeiro-20130617-04-size-598.jpg?1371511266' } );

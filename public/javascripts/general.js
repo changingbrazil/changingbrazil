@@ -8,7 +8,11 @@ if (typeof String.prototype.startsWith != 'function') {
 
 var action = window.location.pathname;
 
-if (action === "/") action = "/news";
+// if (action === "/") action = "/news";
+
+if (action.startsWith("/news")) { // rewrite for /discussions/foo
+	action = "/news/";
+}
 
 if (action.startsWith("/discussions")) { // rewrite for /discussions/foo
 	action = "/discussions/";

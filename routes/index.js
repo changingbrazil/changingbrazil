@@ -10,17 +10,32 @@ var title = 'Changing Brazil - A Hora de Mudar é Agora!';
 
 exports.index = function(req, res)
 {
-	// Article.find(function (err, articles) {
-	// 	res.render( 'index', { title: title, articles: articles } );
-	// });
-	res.writeHead( 302, { 'Location': '/news/' } );
-	res.end();
+	res.render( 'index', { title: title } );
 };
 
 exports.news = function(req, res)
 {
 	Article.find(function (err, articles) {
-		res.render( 'index', { title: title, articles: articles } );
+		res.render( 'news', { title: title, articles: articles } );
+	});
+};
+
+exports.newsItem = function(req, res)
+{
+	var fullUrl = req.protocol + "://" + "changingbrazil.org" + req.url;
+	
+	Article.findOne({ url: req.url }, function (err, newsItem) {
+		if ( ! err && newsItem != null )
+		{
+			res.render( 'newsItem', {
+				title: title + " - " + newsItem.title,
+				newsItem: newsItem,
+				fullUrl: fullUrl,
+			});
+		} else
+		{
+			res.render( 'helpus', { title: title } );
+		}
 	});
 };
 

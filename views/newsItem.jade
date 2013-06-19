@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	div.content-block
+		h1
+			span #{newsItem.title}
+		p #{newsItem.content}
+	div.fb-comments(data-href="#{fullUrl}", data-width="470", data-num-posts="10")
