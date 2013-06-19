@@ -6,9 +6,20 @@ html
         link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
         link(rel='stylesheet', href='/stylesheets/style.css')
     body
+        //- Twitter button
+        div(style='position: absolute; top: 62px; right: 450px;')
+            a(href="https://twitter.com/share", class="twitter-share-button", data-url="http://changingbrazil.org", data-via="changingbrazil", data-lang="pt", data-hashtags="changingbrazil")
+                Tweetar
+        //- Facebook Like button
+        div(style='position: absolute; top: 60px; right: 0px;')
+            span.fb-like(data-href="http://changingbrazil.org", data-send="false", data-width="450", data-show-faces="false")
+
         a(href="https://github.com/changingbrazil/changingbrazil")
             img(style="position: absolute; top: 0; right: 0; border: 0;", src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png", alt="Fork me on GitHub")
+
+        //- Facebook API root
         div#facebook-root
+
         table#layout-table
             tr
                 td#top-bar-column
@@ -22,9 +33,6 @@ html
                                 tr
                                     td(colspan=2, style='text-align: left; padding-bottom: 13px')
                                         div(style='display: inline-block; height: 30px; overflow: hidden')
-                                            a(href="https://twitter.com/share", class="twitter-share-button", data-url="http://changingbrazil.org", data-via="changingbrazil", data-lang="pt", data-hashtags="changingbrazil")
-                                                Tweetar
-                                            span.fb-like(data-href="http://changingbrazil.org", data-send="false", data-width="450", data-show-faces="false")
                                 tr
                                     td#sidebar-column
                                         nav#sidebar
