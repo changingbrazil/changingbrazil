@@ -58,8 +58,4 @@ exports.discussionItem = function(req, res)
 exports.helpus = function(req, res)
 {
 	res.render( 'helpus', { title: title } );
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 6817ff7de6dd541d33e5b87af59a2e50d5930e92
