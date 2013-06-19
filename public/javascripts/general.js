@@ -32,3 +32,10 @@ $( 'a[href="' + action + '"]' ).parent( ).addClass( 'active' );
 
 // Twitter API
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+
+$(document).ready(function() {
+  $(".fb-like-self").html(
+    '<div class="fb-like" data-href="' + encodeURIComponent(location.href) + '" data-send="false" data-width="450" data-show-faces="true"></div>'
+  );
+});
