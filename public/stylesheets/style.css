@@ -34,6 +34,7 @@ td
 #top-bar-column h3
 {
     display: inline;
+    font-size: 22px;
 }
 
 #top-bar-column > div
@@ -120,7 +121,7 @@ td
 .post
 {
     text-align: justify;
-    font-size: 14px;
+    font-size: 13px;
 
     padding: 20px;
     border: 1px solid #bbb;

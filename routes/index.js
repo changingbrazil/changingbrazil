@@ -41,15 +41,21 @@ exports.discussionItem = function(req, res)
 	var fullUrl = req.protocol + "://" + "changingbrazil.org" + req.url;
 
 	Discussion.findOne({ url: req.url }, function (err, discussionItem) {
-		res.render( 'discussionItem', {
-			title: title + " - " + discussionItem.title,
-			discussionItem: discussionItem,
-			fullUrl: fullUrl,
-		});
+		if ( ! err && discussionItem != null )
+		{
+			res.render( 'discussionItem', {
+				title: title + " - " + discussionItem.title,
+				discussionItem: discussionItem,
+				fullUrl: fullUrl,
+			});
+		} else
+		{
+			res.render( 'helpus', { title: title } );
+		}
 	});
 };
 
-exports.contribute = function(req, res)
+exports.helpus = function(req, res)
 {
-	res.render( 'contribute', { title: title } );
+	res.render( 'helpus', { title: title } );
 };

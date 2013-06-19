@@ -10,8 +10,8 @@ var action = window.location.pathname;
 
 if (action === "/") action = "/news";
 
-if (action.startsWith("/discussions")) { // rewrite for /discussions/foo 
-	action = "/discussions";
+if (action.startsWith("/discussions")) { // rewrite for /discussions/foo
+	action = "/discussions/";
 }
 
 $( 'a[href="' + action + '"]' ).parent( ).addClass( 'active' );
