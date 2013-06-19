@@ -10,6 +10,15 @@ var title = 'Changing Brazil - A Hora de Mudar é Agora!';
 
 exports.index = function(req, res)
 {
+	// Article.find(function (err, articles) {
+	// 	res.render( 'index', { title: title, articles: articles } );
+	// });
+	res.writeHead( 302, { 'Location': '/news/' } );
+	res.end();
+};
+
+exports.news = function(req, res)
+{
 	Article.find(function (err, articles) {
 		res.render( 'index', { title: title, articles: articles } );
 	});

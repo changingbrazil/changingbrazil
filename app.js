@@ -30,7 +30,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get( '/', routes.index );
-app.get( '/news', routes.index );
+app.get( '/news', routes.news );
 app.get( '/photos', routes.photos );
 app.get( '/videos', routes.videos );
 app.get( '/discussions', routes.discussions );
