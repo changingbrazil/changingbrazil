@@ -1,10 +1,18 @@
-// select current sidebar item (according to URL)
+if (typeof String.prototype.startsWith != 'function') {
+  String.prototype.startsWith = function (str){
+    return this.slice(0, str.length) == str;
+  };
+}
 
-//var action = $( location ).attr( 'href' ).replace( 'http://127.0.0.1:3000' , "" );
+// select current sidebar item (according to URL)
 
 var action = window.location.pathname;
 
 if (action === "/") action = "/news";
+
+if (action.startsWith("/discussions")) { // rewrite for /discussions/foo 
+	action = "/discussions";
+}
 
 $( 'a[href="' + action + '"]' ).parent( ).addClass( 'active' );
 //

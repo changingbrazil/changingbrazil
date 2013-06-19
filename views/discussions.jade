@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    each item in discussions
+        div
+            a(href='#{item.url}')
+                span #{item.title}

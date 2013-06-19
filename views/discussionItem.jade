@@ -1,0 +1,5 @@
+extends layout
+
+block content
+	h1= discussionItem.title
+	div.fb-comments(data-href="#{fullUrl}", data-width="470", data-num-posts="10")

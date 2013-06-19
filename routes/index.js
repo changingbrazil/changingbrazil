@@ -4,8 +4,9 @@ var Article = mongoose.model("Article");
 var Photo = mongoose.model("Photo");
 var Album = mongoose.model("Album");
 var Video = mongoose.model("Video");
+var Discussion = mongoose.model("Discussion");
 
-var title = 'Changing Brazil';
+var title = '#changingbrazil';
 
 exports.index = function(req, res)
 {
@@ -28,7 +29,22 @@ exports.videos = function(req, res)
 	});
 };
 
-exports.forum = function(req, res)
+exports.discussions = function(req, res)
 {
-    res.render( 'forum', { title: title } );
+	Discussion.find(function (err, discussions) {
+		res.render( 'discussions', { title: title, discussions: discussions } );
+	});
+};
+
+exports.discussionItem = function(req, res)
+{
+	var fullUrl = req.protocol + "://" + "changingbrazil.org" + req.url;
+
+	Discussion.findOne({ url: req.url }, function (err, discussionItem) {
+		res.render( 'discussionItem', {
+			title: title + " - " + discussionItem.title,
+			discussionItem: discussionItem,
+			fullUrl: fullUrl,
+		});
+	});
 };

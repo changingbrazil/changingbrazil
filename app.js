@@ -32,8 +32,10 @@ app.get( '/', routes.index );
 app.get( '/news', routes.index );
 app.get( '/photos', routes.photos );
 app.get( '/videos', routes.videos );
-app.get( '/forum', routes.forum );
+app.get( '/discussions', routes.discussions );
+app.get( '/discussions/:id', routes.discussionItem );
 app.get( '/users', user.list );
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
