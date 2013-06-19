@@ -6,7 +6,7 @@ var Album = mongoose.model("Album");
 var Video = mongoose.model("Video");
 var Discussion = mongoose.model("Discussion");
 
-var title = '#changingbrazil';
+var title = 'Changing Brazil - A Hora de Mudar é Agora!';
 
 exports.index = function(req, res)
 {
