@@ -34,7 +34,7 @@ app.get( '/photos', routes.photos );
 app.get( '/videos', routes.videos );
 app.get( '/discussions', routes.discussions );
 app.get( '/discussions/:id', routes.discussionItem );
-app.get( '/contribute', routes.contribute );
+app.get( '/helpus', routes.helpus );
 app.get( '/users', user.list );
 
 

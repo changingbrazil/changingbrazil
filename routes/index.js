@@ -49,7 +49,7 @@ exports.discussionItem = function(req, res)
 	});
 };
 
-exports.contribute = function(req, res)
+exports.helpus = function(req, res)
 {
-	res.render( 'contribute', { title: title } );
+	res.render( 'helpus', { title: title } );
 };
