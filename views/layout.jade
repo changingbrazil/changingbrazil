@@ -2,8 +2,7 @@ doctype 5
 html
     head
         title= title
-        link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
-        link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+        link(rel='stylesheet', href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css')
         link(rel='stylesheet', href='/stylesheets/style.css')
     body
         //- Twitter button
@@ -18,7 +17,7 @@ html
             img(style="position: absolute; top: 0; right: 0; border: 0;", src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png", alt="Fork me on GitHub")
 
         //- Facebook API root
-        div#facebook-root
+        div#fb-root
 
         table#layout-table
             tr
@@ -66,10 +65,9 @@ html
             tr
                 td
 
-    script(src='/jquery/jquery.min.js')
-    script(src='/isotope/jquery.isotope.min.js')
-
-    script(src='/bootstrap/js/bootstrap.min.js')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/1.5.25/jquery.isotope.min.js')
+    script(src='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js')
 
     script(src='/javascripts/general.js')
     script(src='/javascripts/discussions.js')

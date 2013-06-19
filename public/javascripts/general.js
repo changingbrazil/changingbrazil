@@ -35,7 +35,18 @@ $( 'a[href="' + action + '"]' ).parent( ).addClass( 'active' );
 
 
 $(document).ready(function() {
+  var currentUrl = location.href;
+
   $(".fb-like-self").html(
-    '<div class="fb-like" data-href="' + encodeURIComponent(location.href) + '" data-send="false" data-width="450" data-show-faces="true"></div>'
+    '<div class="fb-like" data-href="' + currentUrl + '" data-send="false" data-width="450" data-show-faces="true"></div>'
+  );
+  $(".fb-send-self").html(
+    '<div class="fb-send" data-href="' + currentUrl + '"></div>'
+  );
+  $(".fb-comments-self").html(
+    '<div class="fb-comments" data-href="' + currentUrl + ' data-width="470" data-num-posts="30"></div>'
+  );
+  $(".twitter-tweet-self").html(
+    '<a href="https://twitter.com/share" class="twitter-share-button" data-via="changingbrazil" data-lang="pt" data-hashtags="changingbrazil">Tweetar</a>'
   );
 });
