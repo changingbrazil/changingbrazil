@@ -2,6 +2,6 @@ extends layout
 
 block content
     each item in discussions
-        div
+        div.content-block
             a(href='#{item.url}')
                 span #{item.title}

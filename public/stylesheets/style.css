@@ -27,6 +27,13 @@ td
 
     background-color: #0a6;
     color: white;
+
+    text-align: center;
+}
+
+#top-bar-column h3
+{
+    display: inline;
 }
 
 #top-bar-column > div
@@ -44,7 +51,7 @@ td
 {
     width: 950px;
     padding: 0px 20px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 
 #content-div table
@@ -101,6 +108,37 @@ td
     border: 1px solid #aaa;
     border-radius: 10px;
     -moz-border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/*********************************************************
+*
+* Posts
+*
+*********************************************************/
+
+.post
+{
+    text-align: justify;
+    font-size: 14px;
+
+    padding: 20px;
+    border: 1px solid #bbb;
+}
+
+.post p
+{
+    margin-bottom: 15px;
+}
+
+.post h4
+{
+    margin-top: 35px;
+}
+
+.post li
+{
+    margin-top: 10px;
 }
 
 /*********************************************************
@@ -111,7 +149,6 @@ td
 
 .video-item
 {
-    margin-bottom: 30px;
     width: 660px;
 }
 
