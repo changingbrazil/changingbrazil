@@ -44,7 +44,7 @@ $(document).ready(function() {
     '<div class="fb-send" data-href="' + currentUrl + '"></div>'
   );
   $(".fb-comments-self").html(
-    '<div class="fb-comments" data-href="' + currentUrl + ' data-width="470" data-num-posts="30"></div>'
+    '<div class="fb-comments" data-href="' + currentUrl + ' data-width="700" data-num-posts="30"></div>'
   );
   $(".twitter-tweet-self").html(
     '<a href="https://twitter.com/share" class="twitter-share-button" data-via="changingbrazil" data-lang="pt" data-hashtags="changingbrazil">Tweetar</a>'
