@@ -11,15 +11,16 @@ block content
     div.isotope-container
         each item in discussions
             a(href='#{item.url}')
-                div.isotope-item.content-block
+                div.isotope-item.content-block.discussion-item
                     table
                         tbody
                             tr
                                 td(rowspan=3)
-                                    img(src='/images/#{item.imageURL}')
+                                    img(src='/images/discussions/#{item.imageURL}')
                             tr
                                 td
                                     div.discussion-title #{item.title}
                             tr
                                 td
                                     div.discussion-description #{item.description}
+
