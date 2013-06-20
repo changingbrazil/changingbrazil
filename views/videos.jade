@@ -12,10 +12,10 @@ block content
                 tbody
                     tr
                         td(rowspan='4')
-                            iframe(width="380", height="214", src="#{item.url}", frameborder="0", allowfullscreen)
+                            iframe(width="380", height="214", src="http://www.youtube.com/embed/#{item.videoId}", frameborder="0", allowfullscreen)
                     tr
                         td.video-title
-                            a(href="#{item.url}")
+                            a(href="http://www.youtube.com/watch?v=#{item.videoId}")
                                 span #{item.title}
                     tr
                         td.video-date
