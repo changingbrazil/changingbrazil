@@ -16,8 +16,18 @@ html
         table#layout-table
             tr
                 td#top-bar-column
-                    div
-                        h3= title
+                    table
+                        tbody
+                            tr
+                                td(style='width: 20%;')
+                                    h3 Changing Brazil
+                                td(style='text-align: center; width: 70%;')
+                                    h4 A hora de mudar é agora!
+                                td
+                                    a(href='https://www.facebook.com/pages/Changing-Brazil/162606373921611')
+                                        img(src='/images/facebook.png', style='margin-right: 15px;')
+                                    a(href='https://twitter.com/changingbrazil')
+                                        img(src='/images/twitter.png')
             tr
                 td#content-column
                     div#content-div
@@ -48,7 +58,7 @@ html
                                                 li
                                                     a(href='/editorial/bem-vindo')
                                                         i.icon-pencil
-                                                        span Editorial  
+                                                        span Editorial
                                                 //- li
                                                 //-     a(href='/news/')
                                                 //-         i.icon-bullhorn
@@ -63,7 +73,7 @@ html
                                                         span Vídeos
                                                 li
                                                     a(href='/helpus')
-                                                        i.icon-retweet
+                                                        i.icon-thumbs-up
                                                         span Quero Ajudar!
                                     td#main-content-column
                                         block content

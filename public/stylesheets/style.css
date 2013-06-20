@@ -27,9 +27,9 @@ td
 
     background-color: #0a5;
     color: white;
-
-    text-align: center;
+    color: #ff7;
 }
+
 
 #top-bar-column h3
 {
@@ -37,10 +37,22 @@ td
     font-size: 22px;
 }
 
-#top-bar-column > div
+#top-bar-column table
 {
     width: 950px;
     margin: 0 auto;
+    table-layout: fixed;
+    margin-top: 2px;
+}
+
+#top-bar-column table td
+{
+    vertical-align: middle;
+}
+
+#top-bar-column table img
+{
+    width: 35px;
 }
 
 #content-column
