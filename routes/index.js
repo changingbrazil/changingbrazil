@@ -69,7 +69,7 @@ exports.discussionItem = function(req, res)
 {
 	var fullUrl = req.protocol + "://" + "changingbrazil.org" + req.url;
 
-	Discussion.findOne({ url: req.url }, function (err, discussionItem) {
+	Discussion.findOne({ url: "/discussions/" + req.params.id }, function (err, discussionItem) {
 		if ( ! err && discussionItem != null )
 		{
 			res.render( 'discussionItem', {

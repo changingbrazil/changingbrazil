@@ -37,7 +37,8 @@ app.get( '/videos', routes.videos );
 //app.get( '/editorial', routes.editorial );
 app.get( '/editorial/bem-vindo', routes.editorial );
 app.get( '/discussions', routes.discussions );
-app.get( '/discussions/:id', routes.discussionItem );
+app.get( '/discussions/:id?', routes.discussionItem );
+//app.get( /^\/discussions\/\:i\d(\?.+)?/g, routes.discussionItem );
 app.get( '/helpus', routes.helpus );
 app.get( '/users', user.list );
 
