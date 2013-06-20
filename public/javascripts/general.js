@@ -49,6 +49,9 @@ $(document).ready(function() {
   $(".twitter-tweet-self").html(
     '<a href="https://twitter.com/share" class="twitter-share-button" data-via="changingbrazil" data-lang="pt" data-hashtags="changingbrazil">Tweetar</a>'
   );
+  $(".fb-comments-self").html(
+    '<fb:comments href="' + currentUrl +'"></fb:comments>'
+  );
 });
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

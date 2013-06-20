@@ -160,7 +160,7 @@ Article.remove().exec(function(error) {
 					(new Discussion(
 						{
 							title: "Falta de Transparência",
-							url: "/discussions/falta-de-transparencia.jpg",
+							url: "/discussions/falta-de-transparencia",
 							imageURL: 'falta-de-transparencia.jpg',
 							description: 'Não enxergamos boa parte do que é feito pelos políticos. Não sabemos ao certo para onde vai o dinheiro dos impostos. Não sabemos como foram gastos os investimentos na Copa. Não sabemos sequer como está votando aquele deputado que elegemos. Com tanta escuridão, fica difícil ter consciência política. Como podemos pressionar o governo a ser mais transparente? Como encontrar e apresentar esses dados ao povo, de uma forma que todos entendam?'
 						}
