@@ -1,8 +1,25 @@
 extends layout
 
 block content
-	div.isotope-container
-		each item in discussions
-			a(href='#{item.url}')
-				div.isotope-item
-					span #{item.title}
+    div.contact-us
+        | Quer sugerir algum tópico importante? Mande email para&nbsp;
+        a(href='mailto:info@changingbrazil.org') info@changingbrazil.org
+        //- | ou tweet para&nbsp;
+        //- a(href='http://twitter.com/changingbrazil') @changingbrazil
+        | !
+
+    div.isotope-container
+        each item in discussions
+            a(href='#{item.url}')
+                div.isotope-item.content-block
+                    table
+                        tbody
+                            tr
+                                td(rowspan=3)
+                                    img(src='/images/#{item.imageURL}')
+                            tr
+                                td
+                                    div.discussion-title #{item.title}
+                            tr
+                                td
+                                    div.discussion-description #{item.description}

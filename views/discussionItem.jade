@@ -1,5 +1,16 @@
 extends layout
 
 block content
-	h1= discussionItem.title
-	div.fb-comments(data-href="#{fullUrl}", data-width="470", data-num-posts="10")
+    div.isotope-item.content-block
+        table
+            tbody
+                tr
+                    td(rowspan=3)
+                        img(src='/images/#{item.imageURL}')
+                tr
+                    td
+                        div.discussion-title #{item.title}
+                tr
+                    td
+                        div.discussion-description #{item.description}
+    div.fb-comments(data-href="#{fullUrl}", data-width="700", data-num-posts="10")

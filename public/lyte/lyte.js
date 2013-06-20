@@ -15,15 +15,15 @@ function lyte(){
 		p.appendChild(pl);
 		p.onclick=not_so_lyte;
 		pl.id="lyte_"+lyte_id;
-		setStyle(pl,"cursor:pointer;text-align:center;overflow:hidden;height:385px;width:480px;position:relative;margin:0px auto;");
-		pl.innerHTML="<img src=\""+imgBaseUrl+"play.png\" style=\"margin-top: 165px; \" /><img src=\""+imgBaseUrl+"controls.png\" width=\"100%\" style=\"position:absolute; left:0px; bottom:0px;\"/>";
+		setStyle(pl,"cursor:pointer;text-align:center;overflow:hidden;height:214px;width:380px;position:relative;margin:0px auto;");
+		pl.innerHTML="<img src=\""+imgBaseUrl+"play.png\" style=\"margin-top: 165px; \" /><img src=\""+imgBaseUrl+"controls.png\" width=\"380px\" style=\"position:absolute; left:0px; bottom:0px;\"/>";
 		pl.style.background="#000 url(http://img.youtube.com/vi/"+lyte_id+"/0.jpg) no-repeat top center";
 	}
 }
 
 function not_so_lyte(){
 	this.onclick="";
-	this.innerHTML = "<embed src=\"http://www.youtube-nocookie.com/v/"+this.id+"&autoplay=1&rel=0&egm=0\" type=\"application/x-shockwave-flash\" id=\"lyte_"+this.id+"\" wmode=\"transparent\" width=\"480\" height=\"385\" allowscriptaccess=\"always\"></embed>";
+	this.innerHTML = "<embed src=\"http://www.youtube-nocookie.com/v/"+this.id+"&autoplay=1&rel=0&egm=0\" type=\"application/x-shockwave-flash\" id=\"lyte_"+this.id+"\" wmode=\"transparent\" width=\"380\" height=\"214\" allowscriptaccess=\"always\"></embed>";
 	}
 
 function parseMe(r){

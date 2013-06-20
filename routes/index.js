@@ -20,6 +20,11 @@ exports.news = function(req, res)
 	});
 };
 
+exports.editorial = function(req, res)
+{
+	res.render( 'editorial', { title: title } );
+};
+
 exports.newsItem = function(req, res)
 {
 	var fullUrl = req.protocol + "://" + "changingbrazil.org" + req.url;
@@ -69,7 +74,7 @@ exports.discussionItem = function(req, res)
 		{
 			res.render( 'discussionItem', {
 				title: title,
-				discussionItem: discussionItem,
+				item: discussionItem,
 				fullUrl: fullUrl,
 			});
 		} else

@@ -1,13 +1,18 @@
 extends layout
 
 block content
+    div.contact-us
+        | Quer sugerir algum vídeo bacana? Mande o link para&nbsp;
+        a(href='mailto:info@changingbrazil.org') info@changingbrazil.org
+        | !
+
     each item in videos
         div.content-block.video-item
             table
                 tbody
                     tr
                         td(rowspan='4')
-                            div.lyte(id="#{item.videoId}")
+                            iframe(width="380", height="214", src="#{item.url}", frameborder="0", allowfullscreen)
                     tr
                         td.video-title
                             a(href="#{item.url}")
@@ -21,4 +26,3 @@ block content
                     tr
                         td
                             djfgkldfjgld
-    script(src='/lyte/lyte.js')
