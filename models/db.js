@@ -99,14 +99,14 @@ Article.remove().exec(function(error) {
 						}
 					)).save();
 
-					(new Video(
-						{
-							videoId: 'x2b4Dtav2jU',
-							title: 'O prefeito do Rio mente',
-							date: new Date( 2013, 05, 18 ),
-							description: 'A representatividade política desse Parlamento é muito ruim, por isso tem medo da sociedade, mas não é destruindo o prédio da Alerj que vão conseguir essa mudança política. É ocupando as ruas. Sete capitais já reduziram o valor passagem e isso se deu pela forte capacidade de mobilização da sociedade. Nesse sentido, o prefeito do Rio mente de forma irresponsável dizendo que aceita receber a liderança do movimento, que ele sabe que não existe, de forma debochada. Diz que não vai subsidiar empresas de ônibus. Mentira. Ele já subsidia. O prefeito e a sua base reduziram o ISS de 2% para 0,01% e, em dois anos, deixaram de arrecadar quase R$ 100 milhões. O nome disso é subsídio disfarçado. As passagens são caras e a prefeitura não tem qualquer controle sobre as empresas. A prefeitura paga quase 50 milhões por ano para a Rio Ônibus colocar o validador que controla a frequência dos alunos da rede. Há muito dinheiro público dentro dos interesses econômicos dessas empresas. Queremos que tenha coragem para abrir a caixa-preta, que reveja a licitação de carta marcada que fez em 2010. É para isso que a sociedade está indo para a rua. O senhor Eduardo Paes terá que ceder como as outras capitais já fizeram, porque esse movimento vai crescer e será vitorioso", afirmou Marcelo Freixo, nesta terça-feira (18/6), no plenário da Alerj.'
-						}
-					)).save();
+					// (new Video(
+					// 	{
+					// 		videoId: 'x2b4Dtav2jU',
+					// 		title: 'O prefeito do Rio mente',
+					// 		date: new Date( 2013, 05, 18 ),
+					// 		description: 'A representatividade política desse Parlamento é muito ruim, por isso tem medo da sociedade, mas não é destruindo o prédio da Alerj que vão conseguir essa mudança política. É ocupando as ruas. Sete capitais já reduziram o valor passagem e isso se deu pela forte capacidade de mobilização da sociedade. Nesse sentido, o prefeito do Rio mente de forma irresponsável dizendo que aceita receber a liderança do movimento, que ele sabe que não existe, de forma debochada. Diz que não vai subsidiar empresas de ônibus. Mentira. Ele já subsidia. O prefeito e a sua base reduziram o ISS de 2% para 0,01% e, em dois anos, deixaram de arrecadar quase R$ 100 milhões. O nome disso é subsídio disfarçado. As passagens são caras e a prefeitura não tem qualquer controle sobre as empresas. A prefeitura paga quase 50 milhões por ano para a Rio Ônibus colocar o validador que controla a frequência dos alunos da rede. Há muito dinheiro público dentro dos interesses econômicos dessas empresas. Queremos que tenha coragem para abrir a caixa-preta, que reveja a licitação de carta marcada que fez em 2010. É para isso que a sociedade está indo para a rua. O senhor Eduardo Paes terá que ceder como as outras capitais já fizeram, porque esse movimento vai crescer e será vitorioso", afirmou Marcelo Freixo, nesta terça-feira (18/6), no plenário da Alerj.'
+					// 	}
+					// )).save();
 
 					(new Video(
 						{
@@ -137,26 +137,38 @@ Article.remove().exec(function(error) {
 
 
 
+
 					(new Discussion(
 						{
-							title: "PEC 33 e 37",
-							url: "/discussions/pec-33-e-37",
-							imageURL: 'pec-33-e-37.jpg',
-							description: 'Duas propostas de emenda constitucional que ameaçam seriamente o equilíbrio dos três poderes (veja detalhes na nossa seção de vídeos). Hora de focar o protesto neste tópico?'
+							title: "Violência Policial",
+							url: "/discussions/violencia-policial",
+							imageURL: 'violencia-policial.jpg',
+							description: 'Durante os protestos, cabe à força policial combater vandalismos. Só que vimos muito uso de força contra manifestantes pacíficos. Como reagir durante esses atos de violência? Como denunciar os abusos? Opine aqui e compartilhe vídeos e fotos!'
+						}
+					)).save();
+
+
+					(new Discussion(
+						{
+							title: "Violência de Manifestantes",
+							url: "/discussions/violencia-de-manifestantes",
+							imageURL: 'violencia-de-manifestantes.jpg',
+							description: 'Os protestos têm sido pacíficos em grande parte. Infelizmente, uma minoria de manifestantes costuma atacar lojas, carros e o patrimônio público. A revolta do povo justifica este tipo de violência, mesmo numa democracia? Como controlar exageros dentro de uma multidão?'
 						}
 					)).save();
 
 					(new Discussion(
 						{
-							title: "Violência de Manifestantes",
-							url: "/discussions/violencia-nos-protestos",
-							imageURL: 'violencia-de-manifestantes.jpg',
-							description: 'Os protestos têm sido pacíficos em grande parte. Infelizmente, uma minoria de manifestantes costuma atacar lojas, carros e o patrimônio público. A revolta do povo justifica este tipo de violência, mesmo numa democracia? Como controlar exageros dentro de uma multidão?'
+							title: "PEC 33 e 37",
+							url: "/discussions/pec-33-e-37",
+							imageURL: 'pec-33-e-37.jpg',
+							description: 'Duas propostas de emenda constitucional que mexeriam com o equilíbrio dos três poderes (veja detalhes na nossa seção de vídeos). Hora de focar o protesto neste tópico?'
 						}
 					)).save();
+
 					//(new Discussion({ title: "Corrupção", url: "/discussions/protestosEmSaoPaulo" })).save();
 					//(new Discussion({ title: "Importância do Voto", url: "/discussions/copaDoMundo" })).save();
-					
+
 					(new Discussion(
 						{
 							title: "Falta de Transparência",
@@ -165,7 +177,7 @@ Article.remove().exec(function(error) {
 							description: 'Não enxergamos boa parte do que é feito pelos políticos. Não sabemos ao certo para onde vai o dinheiro dos impostos. Não sabemos como foram gastos os investimentos na Copa. Não sabemos sequer como está votando aquele deputado que elegemos. Com tanta escuridão, fica difícil ter consciência política. Como podemos pressionar o governo a ser mais transparente? Como encontrar e apresentar esses dados ao povo, de uma forma que todos entendam?'
 						}
 					)).save();
-					
+
 					// (new Discussion(
 					// 	{
 					// 		title: "Discriminação",
