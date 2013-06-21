@@ -6,7 +6,7 @@ var Album = mongoose.model("Album");
 var Video = mongoose.model("Video");
 var Discussion = mongoose.model("Discussion");
 
-var title = 'Changing Brazil - A Hora de Mudar é Agora!';
+var title = 'Changing Brazil - Discussões, artigos e vídeos para mudar o Brasil!';
 
 exports.index = function(req, res)
 {
@@ -28,7 +28,7 @@ exports.editorial = function(req, res)
 exports.newsItem = function(req, res)
 {
 	var fullUrl = req.protocol + "://" + "changingbrazil.org" + req.url;
-	
+
 	Article.findOne({ url: req.url }, function (err, newsItem) {
 		if ( ! err && newsItem != null )
 		{
