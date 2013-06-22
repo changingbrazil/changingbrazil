@@ -22,7 +22,8 @@ exports.news = function(req, res)
 
 exports.editorial = function(req, res)
 {
-	res.render( 'editorial', { title: title } );
+	var markdownExample = "A First Level Header\n====================\nSecond Level Header\n---------------------\nNow is the time for all good men to come to\nthe aid of their country. This is just a\nregular paragraph.\nThe quick brown fox jumped over the lazy\ndog's back.\n### Header 3\n> This is a blockquote.\n> \n> This is the second paragraph in the blockquote.\n>\n> ## This is an H2 in a blockquote";
+	res.render( 'editorial', { title: title, markdownExample: markdownExample } );
 };
 
 exports.newsItem = function(req, res)

@@ -12,6 +12,8 @@ var express = require('express')
 
 var app = express();
 
+app.locals.md = require("node-markdown").Markdown;
+
 // all environments
 app.set('port', process.env.PORT || 80);
 app.set('views', __dirname + '/views');
