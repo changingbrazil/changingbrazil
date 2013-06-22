@@ -83,6 +83,24 @@ Article.remove().exec(function(error) {
 
 					(new Video(
 						{
+							videoId: 'fdsX1rnvIhA',
+							title: 'Apanhado geral da violência policial no dia 20/06/2013 no Rio de Janeiro ',
+							date: new Date( 2013, 05, 22 ),
+							description: 'As emissoras de TV sempre mostram a violência de uma minoria de manifestantes. Mas pouco é dito sobre a violência policial contra aqueles que protestavam pacificamente. Recebemos uma compilação de vários vídeos enviados por internautas, mostrando vários abusos das tropas de choque contra quem não praticava nenhum vandalismo.'
+						}
+					)).save();
+
+					(new Video(
+						{
+							videoId: 'XEj3UH69g5k',
+							title: 'Pronunciamento da presidenta Dilma Rousseff',
+							date: new Date( 2013, 05, 21 ),
+							description: 'A presidenta Dilma Rousseff afirmou, nesta sexta-feira (21), que o vigor das manifestações deve ser aproveitado para que mais mudanças sejam feitas em benefício da população. Dilma anunciou, em pronunciamento em cadeia nacional de rádio e TV, que vai convidar os governadores e prefeitos das principais cidades do país para um grande pacto em torno da melhoria dos serviços públicos.'
+						}
+					)).save();
+
+					(new Video(
+						{
 							videoId: 'v9rgOwH99nc',
 							title: 'MUDA BRASIL - FAZ SENTIDO',
 							date: new Date( 2013, 05, 18 ),
